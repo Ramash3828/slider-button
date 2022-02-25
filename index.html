@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider btn</title>
+</head>
+<style>
+    .container {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    input[type="checkbox"] {
+        position: relative;
+        appearance: none;
+        width: 80px;
+        height: 40px;
+        background-color: #ccc;
+        outline: none;
+        border-radius: 25px;
+        box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.6);
+    }
+    
+    input:checked[type="checkbox"] {
+        background-color: aqua;
+    }
+    
+    input[type="checkbox"]::before {
+        content: 'off';
+        color: #ccc;
+        text-align: center;
+        line-height: 40px;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+        transform: scale(1.1);
+        transition: .5s;
+    }
+    
+    input:checked[type="checkbox"]::before {
+        left: 40px;
+        content: 'on';
+        text-align: center;
+        line-height: 40px;
+        color: rgb(26, 241, 248);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <input type="checkbox" name="" id="">
+    </div>
+    <script>
+        const a = 6;
+        console.log(a);
+    </script>
+</body>
+
+</html>
